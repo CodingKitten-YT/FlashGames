@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    #flash-container {
+      width: 100%;
+      height: 100%;
+      background-color: black; /* Optional: set a background color */
+    }
+
+    #flash-content {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
 <body>
 
-  <body bgcolor="#000000">
-<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-<embed src="ETD.swf" quality="high" pluginspage="http://www.macromedia.com/go/getfashplayer" type="application/x-shockwave-flash" width="1920" height="1080">
+  <div id="flash-container">
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <embed id="flash-content" src="ETD.swf" quality="high" pluginspage="http://www.macromedia.com/go/getfashplayer" type="application/x-shockwave-flash">
+  </div>
 
 </body>
 </html>
